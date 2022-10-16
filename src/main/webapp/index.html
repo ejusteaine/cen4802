@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Todo List App Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h2>Add Item To List</h2>
+
+<form action="todoitems" method="post">
+    <input type="hidden" name="action" value="add">
+    <label>Add an item:</label>
+    <input type="text" name="itemName" id="itemId">
+    <label>&nbsp;</label>
+    <input type="submit" value="Join Now" id="submit">
+</form>
+<button onclick="createParagraph()">Add New Item</button>
+<div id="demo"><br>
+
+    <script>
+function createParagraph(){
+let person = prompt("How many Items would you like to add");
+for(var i=0; i < person; i++){
+const para = document.createElement("INPUT");
+para.innerText = "New Paragrath";
+var newPara = document.getElementById("demo");
+newPara.appendChild(para);
+}
+}
+</script>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
